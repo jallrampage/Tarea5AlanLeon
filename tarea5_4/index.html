@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+
+</head>
+<body>
+    <h1 id="h1">Hola</h1>
+    <script>
+    
+    const a = window.prompt("Escribe Aguila o Sol")
+    const b=a.toString();
+
+
+    
+    var d = Math.floor(Math.random() * 2);
+    const ag = "Aguila";
+    const s = "Sol";
+    if (b == ag) {
+        if (d == 0) {
+            document.getElementById("h1").innerHTML = "Ganaste el resultado es Aguila";
+        } else {
+            document.getElementById("h1").innerHTML = "Perdiste el resultado es Sol";
+        }
+
+    } else if (b == s) { 
+        if (d == 1) {
+            document.getElementById("h1").innerHTML = "Ganaste el resultado es Sol";
+        } else {
+            document.getElementById("h1").innerHTML = "Perdiste el resultado es Aguila";
+        }        
+    }
+    </script> 
+
+
+</body>
+</html>
